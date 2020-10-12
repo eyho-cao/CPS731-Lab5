@@ -1,6 +1,5 @@
 package com.example.masterdflow2;
 
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -32,7 +31,7 @@ public class SplashScreen extends AppCompatActivity {
 
     public void launchMDF()
     {
-        Intent intent = new Intent(this, websiteListActivity.class);
+        Intent intent = new Intent(this, recipeListActivity.class);
         startActivity(intent);
     }
 }

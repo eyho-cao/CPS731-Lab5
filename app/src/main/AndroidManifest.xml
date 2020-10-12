@@ -20,18 +20,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".websiteListActivity"
+            android:name=".recipeListActivity"
             android:label="@string/title_website_list"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".websiteDetailActivity"
+            android:name=".recipeDetailActivity"
             android:label="@string/title_website_detail"
-            android:parentActivityName=".websiteListActivity"
+            android:parentActivityName=".recipeListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.masterdflow2.websiteListActivity" />
+                android:value="com.example.masterdflow2.recipeListActivity" />
         </activity>
     </application>
 

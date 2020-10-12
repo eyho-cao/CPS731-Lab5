@@ -2,4 +2,5 @@
     <string name="app_name">MasterDFlow2</string>
     <string name="title_website_list">CPS731 Lab 5</string>
     <string name="title_website_detail">website Detail</string>
+    <string name="temp">temp</string>
 </resources>

@@ -10,7 +10,7 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context=".websiteListActivity">
+    tools:context=".recipeListActivity">
 
     <!--
     This layout is a two-pane layout for the Websites master/detail flow.
@@ -25,7 +25,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context="com.example.masterdflow2.websiteListActivity"
+        tools:context="com.example.masterdflow2.recipeListActivity"
         tools:listitem="@layout/website_list_content" />
 
     <FrameLayout
