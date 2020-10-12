@@ -46,14 +46,6 @@ public class websiteListActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         if (findViewById(R.id.website_detail_container) != null) {
             // The detail container view will be present only in the
@@ -75,6 +67,7 @@ public class websiteListActivity extends AppCompatActivity {
     public static class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
+        private static String recipeDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sollicitudin porttitor fermentum. Suspendisse id magna finibus, molestie felis aliquet, pellentesque diam. Nullam elit justo, lobortis id lectus nec, dictum iaculis felis.";
         private final websiteListActivity mParentActivity;
         private final List<DummyContent.DummyItem> mValues;
         private final boolean mTwoPane;
@@ -94,6 +87,7 @@ public class websiteListActivity extends AppCompatActivity {
                     Context context = view.getContext();
                     Intent intent = new Intent(context, websiteDetailActivity.class);
                     intent.putExtra(websiteDetailFragment.ARG_ITEM_ID, item.id);
+                    intent.putExtra("recipeDesc", recipeDesc);
 
                     context.startActivity(intent);
                 }
